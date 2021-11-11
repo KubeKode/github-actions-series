@@ -1,0 +1,10 @@
+name: Actions Workflow
+on: [push]
+jobs:
+  run-github-acions:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v1
+      - name: run node file
+        uses: node index.js
