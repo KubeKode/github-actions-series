@@ -6,5 +6,7 @@ jobs:
     steps:
       - name: checkout
         uses: actions/checkout@v1
+      - name: show dir
+        run: ls
       - name: run node file
         run: node index.js
