@@ -10,3 +10,5 @@ jobs:
         run: |
           node -v
           npm -v
+      - name: execute code
+        run: node index.js
