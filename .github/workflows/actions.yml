@@ -7,4 +7,4 @@ jobs:
       - name: checkout
         uses: actions/checkout@v1
       - name: run node file
-        uses: node index.js
+        run: node index.js
