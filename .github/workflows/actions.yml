@@ -8,6 +8,8 @@ jobs:
   run-github-acions:
     runs-on: ubuntu-latest
     steps:
+      - name: PayLoad
+        run: echo ${{ github.event.client_payload.env }}
       - name: Show dir and files
         run: |
           pwd
