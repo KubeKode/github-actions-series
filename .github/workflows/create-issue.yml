@@ -17,11 +17,11 @@ jobs:
           git branch --set-upstream-to=origin/master
           git pull
           ls -a
-          echo $RANDOM >> random.txt
+          # echo $RANDOM >> random.txt
           ls -a
-          git add -A
-          git commit -m"Random file using workflow"
-          git push
+          # git add -A
+          # git commit -m"Random file using workflow"
+          # git push
       # - name: Create issue using REST API
       #   run: |
       #     curl --request POST \
