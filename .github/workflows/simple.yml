@@ -1,15 +1,18 @@
 name: Shell Commands
-on: [pull_request]
+on: [push,pull_request]
 jobs:
   run-shell-command:
     runs-on: ubuntu-latest
+    timeout-minutes: 360
     steps: 
       - name: echo a string
         run: echo "Hello Actions"
+        continue-on-error: true
       - name: multiline script
         run: |
           node -v
           npm -v
+        timeout-minutes: 180
       - name: python Command
         run: |
           import platform
