@@ -9,7 +9,7 @@ jobs:
           echo ${{ contains( 'hello', 'll' ) }}
           echo ${{ startswith( 'hello', 'he' ) }}
           echo ${{ endsWith( 'hello, 'lo' ) }}
-          echo ${{ format('Hello {0} {1} {2}', 'World','!','!') }} 
+          echo ${{ format('Hello {0} {1} {2}','World','!','!') }}
   one:
     runs-on: ubuntu-latest
     steps:
