@@ -22,7 +22,7 @@ jobs:
       - name: Run a Script
         uses: docker://node:16-alpine
         with:
-          entrypoint: ./script.sh
+          entrypoint: script.sh
           args: "Some string" # acts like CMD
   node-docker:
     runs-on: ubuntu-latest
