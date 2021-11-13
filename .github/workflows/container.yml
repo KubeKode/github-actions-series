@@ -19,12 +19,11 @@ jobs:
           entrypoint: /usr/local/bin/node
           args: -v # acts like CMD
       - uses: actions/checkout@v1
-      - name: Run a Script
-        uses: docker://node:12-alpine3.12
-        run: ls
-        with:
-          entrypoint: ./script.sh
-          args: "Some string" # acts like CMD
+      # - name: Run a Script
+      #   uses: docker://node:12-alpine3.12
+      #   with:
+      #     entrypoint: ./script.sh
+      #     args: "Some string" # acts like CMD
   node-docker:
     runs-on: ubuntu-latest
     services:
