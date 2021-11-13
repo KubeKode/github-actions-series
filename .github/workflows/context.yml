@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: dump
         run: |
-          echo ${{ contatins( 'hello', 'll' ) }}
+          echo ${{ contains( 'hello', 'll' ) }}
           echo ${{ startswith( 'hello', 'he' ) }}
           echo ${{ endsWith( 'hello, 'lo' ) }}
           echo ${{ format('Hello {0} {1} {2}', 'World','!','!') }} 
