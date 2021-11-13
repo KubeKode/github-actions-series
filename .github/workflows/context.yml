@@ -7,7 +7,7 @@ jobs:
       - name: dump
         run: |
           echo ${{ contains('hello','ll') }}
-          echo ${{ startswith('hello','he') }}
+          echo ${{ startsWith('hello','he') }}
           echo ${{ endsWith('hello,'lo') }}
           echo ${{ format('Hello {0} {1} {2}','World','!','!') }}
   one:
