@@ -1,11 +1,8 @@
 name: Automated contribute
 
 on:
-  push:
-    branches:
-      - 'automated-contribute'
   schedule:
-    - cron:  '00 01,13,14,15,16,23 * * *'
+    - cron:  '10 01,13,14,15,16,23 * * *'
   
 
 jobs:
