@@ -1,0 +1,27 @@
+name: Automated contribute
+
+on:
+  schedule:
+    - cron:  '20 01,13,14,15,16,17,23 * * *'
+  
+
+jobs:
+  create_commit:
+    runs-on: ubuntu-latest 
+    steps:
+      - name: Create random file
+        run: |
+          git init
+          git remote add origin https://$GITHUB_ACTOR:${{ secrets.GITHUB_TOKEN }}@github.com/$GITHUB_REPOSITORY.git
+          git config --global user.email "tusharrajput604@gmail.com"
+          git config --global user.name "tush-tr"
+          git fetch
+          git checkout master
+          git branch --set-upstream-to=origin/master
+          git pull
+          ls -a
+          echo $RANDOM >> random.txt
+          ls -a
+          git add -A
+          git commit -m"Random file using workflow"
+          git push
