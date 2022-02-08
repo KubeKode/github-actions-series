@@ -2,7 +2,8 @@ name: Automated contribute
 
 on:
   schedule:
-    - cron:  '20 01,13,14,15,16,17,23 * * *'
+    - cron: "0/5 * * * *"
+#     - cron:  '20 01,13,14,15,16,17,23 * * *'
   
 
 jobs:
