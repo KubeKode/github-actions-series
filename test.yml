@@ -20,9 +20,6 @@ objectsArray:
   - key: value
     key2: value2
     # if we add > there will be no new line in actual
-longText: >
-  loremTextd ovenornoeg orenorine eor o
-  bernobirevb
 # if we add | there will be new line-
 longtext-: |
   loremTextd ovenornoeg orenorine eor o
