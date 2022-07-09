@@ -1,7 +1,7 @@
 name: Automated contribute
 
 on:
-  workflow_dispatch:
+  pull_request
 
   
 
