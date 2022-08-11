@@ -1,0 +1,14 @@
+name: First workflow
+on: push
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo a name
+        run: echo "I am from Github Actions"
+      - name: multiline script
+        run: |-
+          echo "Printing versions of npm and node"
+          node -v
+          npm -v
