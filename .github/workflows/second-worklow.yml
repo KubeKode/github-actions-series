@@ -6,6 +6,8 @@ jobs:
   run-commands:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v3
+      - run: python sample.py
       - name: Run Python script
         run: print("This is python")
         shell: python
