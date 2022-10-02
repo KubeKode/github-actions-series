@@ -1,0 +1,13 @@
+name: Demo Workflow
+on: push
+jobs:
+  demo:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout
+        uses: actions/checkout@v3
+      - run: ls
+  demo2:
+    runs-on: ubuntu-latest
+    steps:
+      - run: echo "HEllo this is second job"
