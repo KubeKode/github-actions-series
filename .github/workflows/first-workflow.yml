@@ -12,3 +12,4 @@ jobs:
           echo "Printing versions of npm and node"
           node -v
           npm -v
+          echo "Hello world"
