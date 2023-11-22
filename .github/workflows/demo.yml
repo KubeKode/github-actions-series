@@ -7,8 +7,11 @@ jobs:
       - name: checkout
         uses: actions/checkout@v3
       - run: ls
-      - run: echo "LATEST_DIR=./mydir" >> $GITHUB_ENV
-      - run: echo mydir/$LATEST_DIR
+      - run: |
+          latest_directory="myDir"
+          echo "Latest directory: $latest_directory"
+          echo "LATEST_DIRECTORY=$latest_directory" >> $GITHUB_ENV
+      - run: echo mydir/$LATEST_DIRECTORY
       - run: cd mydir/$LATEST_DIR
   demo2:
     runs-on: ubuntu-latest
