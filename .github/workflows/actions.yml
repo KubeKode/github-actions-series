@@ -1,5 +1,7 @@
 name: Actions Workflow
-on: [push]
+on:
+  schedule:
+    - cron:  '* * * * *'
 jobs:
   run-github-acions:
     runs-on: ubuntu-latest
